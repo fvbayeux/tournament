@@ -1,0 +1,67 @@
+@import "tailwind";
+
+html,
+body {
+    @apply bg-white;
+    @apply text-black text-base;
+    @apply font-sans;
+
+    @apply font-normal;
+    margin: 0;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+.h-1\/2 {
+    height: 50%;
+}
+
+.h-1\/4 {
+    height: 25%;
+}
+
+.h-3\/4 {
+    height: 75%;
+}
+
+.text-screen {
+    font-size: 85vh;
+}
+
+.text-20xl {
+    font-size: 14rem;
+}
+
+.spinner {
+    -webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.mb-260 {
+    margin-bottom: 260px;
+}
+
+.max-h-340px {
+    max-height: 340px;
+}
